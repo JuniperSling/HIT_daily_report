@@ -24,7 +24,7 @@ def post(token):
         for i in range(0, 5):
                 rdata = {"info": "{\"model\":{\"gpsjd\":126.636165,\"gpswd\":45.744048,\"jzdz\":\"\",\"kzl1\":\"1\",\"kzl2\":\"\",\"kzl3\":\"\",\"kzl4\":\"\",\"kzl5\":\"\",\"kzl6\":\"黑龙江省\",\"kzl7\":\"哈尔滨市\",\"kzl8\":\"南岗区\",\"kzl9\":\"教化街11号\",\"kzl10\":\"黑龙江省哈尔滨市南岗区教化街11号\",\"kzl11\":\"\",\"kzl12\":\"\",\"kzl13\":\"0\",\"kzl14\":\"\",\"kzl15\":\"0\",\"kzl16\":\"\",\"kzl17\":\"1\",\"kzl18\":\"0;\",\"kzl19\":\"\",\"kzl20\":\"\",\"kzl21\":\"\",\"kzl22\":\"\",\"kzl23\":\"0\",\"kzl24\":\"0\",\"kzl25\":\"\",\"kzl26\":\"\",\"kzl27\":\"\",\"kzl28\":\"0\",\"kzl29\":\"\",\"kzl30\":\"\",\"kzl31\":\"\",\"kzl32\":\"2\",\"kzl33\":\"\",\"kzl34\":{},\"kzl38\":\"黑龙江省\",\"kzl39\":\"哈尔滨市\",\"kzl40\":\"南岗区\",\"kzl41\":\"0\",\"kzl42\":\"\"},\"token\": %s}" % token}
                 res = requests.post(url=url, headers=head, data=rdata)
-                if res.text.find("true") != -1:
+                if res.text.find("true") == 13:
                         return 1
                 else:
                         token = get_token()
