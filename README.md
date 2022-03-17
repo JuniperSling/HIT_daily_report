@@ -2,7 +2,7 @@
 python request POST实现
 
 1. 需要python环境
-2. 需要导入`request`包
+2. 需要导入`requests`包
    ```bash
    pip intall requests
     ```
