@@ -16,6 +16,7 @@
 
 
 ### selenium 实现
+> Selenium实现的代码参考校友代码，在此感谢[@eagleshield]https://gitee.com/eagleshield/selenium_daily_report
 
 1. 需要python环境
 
